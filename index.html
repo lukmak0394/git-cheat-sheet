@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GIT Cheat Sheet</title>
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1,
+        h4 {
+            text-transform: uppercase;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Git Cheat Sheet</h1>
+        <div class="command">
+            <h4>Configuring user name and email</h4>
+            <p>git config --global user.name 'Your Name'</p>
+            <p>git config --global user.email 'your@email.mail'</p>
+        </div>
+        <div class="command">
+            <h4>Opening folder in which we will keep project files</h4>
+            <p>cd ~/directory/project-folder</p>
+        </div>
+        <div class="command">
+            <h4>Creating local repository in a specific folder</h4>
+            <p>git init</p>
+        </div>
+        <div class="command">
+            <h4>Changing status to 'staged'</h4>
+            <p>(git add *)  OR (git add specific-file-name)</p>
+        </div>
+        <div class="command">
+            <h4>Commiting changes in local repository</h4>
+            <p>git commit -m 'comment'</p>
+        </div>
+        <div class="command">
+            <h4>Connecting a local repository with a remote one</h4>
+            <p>git remote add origin your-github-repo-path</p>
+        </div>
+        <div class="command">
+            <h4>Pushing a local repository to a remote one</h4>
+            <p>git push -u origin branch-name (ex. main)</p>
+        </div>
+    </div>
+</body>
+</html>
