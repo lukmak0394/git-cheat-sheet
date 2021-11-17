@@ -17,7 +17,7 @@
             font-family:Arial, Helvetica, sans-serif;
             line-height: 1.7;
             height: 100vh;
-            background: #c8cbcc;
+            background: #f4f4f4;
         }
 
         h1,
@@ -33,13 +33,18 @@
             justify-content: center;
             align-items: center;
             margin: auto;
-            max-width: 75%;
+            width: 50%;
             padding: 2rem 0;
         }
 
         .command {
             padding: 1.2rem;
             width: 100%;
+            border-bottom: 2px solid #0f5975;
+        }
+
+        .command:last-child {
+            border-bottom: none;
         }
 
         .command p {
@@ -47,6 +52,12 @@
             font-weight: bold;
             font-style: italic;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            #container {
+                width: 100%;
+            }
         }
 
 
@@ -83,6 +94,10 @@
         <div class="command">
             <h4>Pushing a local repository to a remote one</h4>
             <p>git push -u origin branch-name (ex. main)</p>
+        </div>
+        <div class="command">
+            <h4>Changing file name</h4>
+            <p>git mv old_filename new_filename</p>
         </div>
     </div>
 </body>
